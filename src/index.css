@@ -50,7 +50,7 @@ button:hover {
 
 form {
   padding: 2rem;
-  background: url("assets/IMG_3278.JPG") no-repeat fixed center center/cover;
+  background: url("./assets/IMG_3278.JPG") no-repeat fixed center center/cover;
   color: white;
 }
 
@@ -88,6 +88,7 @@ select {
 
 .view h1 {
   padding: 1rem;
+  color: #9c9b9b;
 }
 
 .notepad {
@@ -153,8 +154,15 @@ select {
 header {
   background-color: #e6fff8;
   color: #9c9b9b;
-  padding: 20px;
+  padding: 2rem;
   text-align: center;
+}
+
+header img {
+  height: 75px;
+  float: left;
+  padding: 20px;
+  background: no-repeat fixed center center/cover;
 }
 
 footer {

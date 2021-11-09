@@ -1,10 +1,14 @@
 import React from 'react';
+import logo from './assets/logo.png';
 
 const Header = () => {
     return (
         <header>
-            <h1>Welcome to our site</h1>
-            <br/>
+                <div id="logo">
+                    <img src={logo} alt="Logo"/>
+                </div>
+                <h1>Welcome to my site</h1>
+                <br />
             <h2>Please enter your details to continue</h2>
         </header>
     );
