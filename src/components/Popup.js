@@ -1,18 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
+
+const closeHandler = () => {
+    window.location.reload();
+};
 
 const Popup = (props) => {
     return (
-        <div class="popup" onclick="myFunction()">
-            <h1> Your note</h1>
-            <br/>
-            <p>Firstname:<span>{props.first}</span> </p>
-            <p>Lastname:<span>{props.last}</span></p>
-            <p>Phone:<span>{props.phone}</span></p>
-            <p>Role:<span>{props.role}</span></p>
-            <p>Message:<span>{props.message}</span></p>
-            <br/>
-            <button>YES, I AM SURE</button>
-            <button id="button2">NOPE, DON'T WANT TO POST IT</button>
+        <div className="overlay">
+            <div className="popup">
+                <h1> Your note:</h1>
+                <div>
+                    <p>First name: <span>{props.first}</span> </p>
+                    <p>Last name: <span>{props.last}</span></p>
+                    <p>Phonenumber: <span>{props.phone}</span></p>
+                    <p>Role: <span>{props.role}</span></p>
+                    <p>Message: <span>{props.message}</span></p>
+                    <button onClick={closeHandler}>Yes, I am sure</button>
+                    <button className="secondary">Nope, don't want to post it</button>
+                </div>
+            </div>
         </div>
         );
     };

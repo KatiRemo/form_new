@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react'
 
 const Form = (props) => {
         return (
-            <form>
+            <form onSubmit={props.submit}>
                 <div> 
                 <label htmlFor="firstname"> First name</label>
                 <input type="text" name="firstname" id="firstname" required onChange={props.change} />
@@ -28,7 +28,7 @@ const Form = (props) => {
                 <label htmlFor="message">Message</label>
                 <textarea name="message" id="message" required onChange={props.change}></textarea>   
                 </div>
-                <button>SEND</button>
+                <input type="submit" value ="send" />
             </form>
         );
     }

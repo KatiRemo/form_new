@@ -1,13 +1,166 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input[type="submit"],
+button {
+  background-color: #797687;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.8rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  margin-left: 150px;
+  width: 250px;
+}
+
+button {
+  width: 48%;
+  margin-top: 2rem;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #2bc19b;
+}
+
+.secondary {
+  border: #2bc19b;
+  color: #333;
+  background: transparent;
+}
+
+/* FORM COMPONENT */
+
+form {
+  padding: 2rem;
+  background: url("assets/IMG_3278.JPG") no-repeat fixed center center/cover;
+  color: white;
+}
+
+label {
+  width: 150px;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+form div {
+  margin: 1rem 0;
+}
+
+input,
+textarea,
+select {
+  font-family: "Raleway", sans-serif;
+  background: #eeeeee;
+  border: 1px solid rgb(102, 102, 102);
+  width: 250px;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* .notepad THIS CHECK TUTORIAL AND DO IT */
+
+/* VIEW COMPONENT */
+
+.view {
+  padding: 2rem;
+  background: #e6fff8;
+}
+
+.view h1 {
+  padding: 1rem;
+}
+
+.notepad {
+  background: #eeeeee;
+  margin: 1rem 0;
+  position: relative;
+  box-shadow: 0 0 5px rgb (121, 121, 121);
+  color: #333;
+}
+
+.notepad::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  border-left: 1px solid #2bc19b;
+  border-right: 1px solid #2bc19b;
+  position: absolute;
+  left: 35px;
+}
+
+.notepad p {
+  padding: 1rem;
+  border-bottom: 1px dotted rgb(145, 145, 145);
+  text-indent: 50px;
+}
+
+.notepad span {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  margin-left: 15px;
+}
+
+/* POPUP COMPONENT */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 55%;
+  width: 50%;
+  background-color: #e6fff8;
+  padding: 2rem;
+  box-shadow: 0 0 5px #333;
+  margin: 0 auto;
+}
+
+.popup p {
+  padding: 1rem 0;
+}
+
+header {
+  background-color: #e6fff8;
+  color: #9c9b9b;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #e6fff8;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 30px;
 }
