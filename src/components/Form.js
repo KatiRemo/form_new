@@ -28,6 +28,7 @@ const Form = (props) => {
                 <label htmlFor="message">Message</label>
                 <textarea name="message" id="message" required onChange={props.change}></textarea>   
                 </div>
+                <button>SEND</button>
             </form>
         );
     }

@@ -2,6 +2,7 @@ import React, {  Component } from 'react';
 import './App.css';
 import Form from './components/Form';
 import View from './components/View';
+import Popup from './components/Popup';
 
 class App extends Component {
   state= {
