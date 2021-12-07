@@ -15,22 +15,6 @@
       "phone": "411",
       "role": "Wannabe",
       "message": "Da alter ego"
-    },
-    {
-      "id": 3,
-      "firstname": "Katie",
-      "lastname": "Da Coder",
-      "phone": "000",
-      "role": "Student",
-      "message": "Yeah"
-    },
-    {
-      "firstname": "Axl",
-      "lastname": "Rose",
-      "phone": "999",
-      "role": "teacher",
-      "message": "Yes please",
-      "id": 4
     }
   ]
 }

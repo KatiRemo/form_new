@@ -18,7 +18,7 @@ const Form = ({submit, change}) => {
                 <div>
                 <label htmlFor="role"> Role</label>
                 <select name="role" id="role" required onChange={change}>
-                <option value=""></option>
+                <option value="">Choose role</option>
                 <option value="teacher">Teacher</option>
                 <option value="student">Student</option>
                 <option value="wannabe">Wannabe</option>

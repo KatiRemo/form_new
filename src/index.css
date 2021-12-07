@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Smooch&display=swap");
 
 * {
   margin: 0;
@@ -115,13 +115,13 @@ select {
 }
 
 .notepad p {
-  padding: 1rem;
+  padding: 0.75rem;
   border-bottom: 1px dotted rgb(145, 145, 145);
   text-indent: 50px;
 }
 
 .notepad span {
-  font-family: "Dancing Script", cursive;
+  font-family: "Smooch", cursive;
   font-size: 1.5rem;
   margin-left: 15px;
 }
@@ -189,5 +189,5 @@ footer {
 
 .notes p {
   color: #333;
-  padding: 20px;
+  padding: 10px;
 }

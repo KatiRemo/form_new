@@ -59,7 +59,7 @@ render () {
       {this.state.showPopup && 
       <Popup {...this.state.inputData} post={this.postHandler}/>}
       {this.state.data.map((note) => (
-        <Notes {...note}/>
+        <Notes {...note} key={note.id}/>
       ))}
       <Footer />
     </div>
