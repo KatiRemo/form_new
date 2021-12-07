@@ -3,7 +3,6 @@ import React from 'react';
 const View = (props) => {
     return (
         <div className="view">
-                <h1> Check your input</h1>
             <div className="notepad">
                 <br/>
                 <p>Firstname:<span>{props.first}</span></p>
