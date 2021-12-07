@@ -7,6 +7,10 @@
 }
 
 body {
+  background: #fdfdcb;
+  background: -webkit-linear-gradient(bottom left, #fdfdcb, #ffbca4);
+  background: -moz-linear-gradient(bottom left, #fdfdcb, #ffbca4);
+  background: linear-gradient(to top right, #fdfdcb, #ffbca4);
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -14,8 +18,9 @@ body {
 
 input[type="submit"],
 button {
-  background-color: #797687;
-  color: white;
+  background-color: #ffbca4;
+  color: #333;
+  box-shadow: 0 0 5px #333;
   text-transform: uppercase;
   padding: 0.8rem;
   border-radius: 5px;
@@ -23,6 +28,7 @@ button {
   font-size: 0.8rem;
   transition: all 0.5s;
   cursor: pointer;
+  margin: 5px;
 }
 
 input[type="submit"] {
@@ -37,20 +43,22 @@ button {
 
 input[type="submit"]:hover,
 button:hover {
-  background-color: #2bc19b;
+  background-color: #ffcbe8;
 }
 
 .secondary {
-  border: #2bc19b;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #333;
   color: #333;
-  background: transparent;
+  background: #fcfdc2;
 }
 
 /* FORM COMPONENT */
 
 form {
   padding: 2rem;
-  color: white;
+  color: #333;
 }
 
 label {
@@ -81,7 +89,7 @@ select {
 /* VIEW COMPONENT */
 
 .view {
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -91,8 +99,6 @@ select {
 }
 
 .notepad {
-  background: #eeeeee;
-  margin: 1rem 0;
   position: relative;
   box-shadow: 0 0 5px rgb (121, 121, 121);
   color: #333;
@@ -102,8 +108,8 @@ select {
   content: "";
   width: 2px;
   height: 100%;
-  border-left: 1px solid #2bc19b;
-  border-right: 1px solid #2bc19b;
+  border-left: 1px solid #ffa486;
+  border-right: 1px solid #ffa486;
   position: absolute;
   left: 35px;
 }
@@ -140,7 +146,10 @@ select {
   left: 0;
   height: 55%;
   width: 50%;
-  background-color: #e6fff8;
+  background: #fdfdcb;
+  background: -webkit-linear-gradient(bottom left, #fdfdcb, #ffbca4);
+  background: -moz-linear-gradient(bottom left, #fdfdcb, #ffbca4);
+  background: linear-gradient(to top right, #fdfdcb, #ffbca4);
   padding: 2rem;
   box-shadow: 0 0 5px #333;
   margin: 0 auto;
@@ -151,8 +160,7 @@ select {
 }
 
 header {
-  background-color: #e6fff8;
-  color: #9c9b9b;
+  color: #333;
   padding: 2rem;
   text-align: center;
 }
@@ -165,7 +173,7 @@ header img {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   background-color: #333;
@@ -177,10 +185,9 @@ footer {
 
 .formArea {
   display: flex;
-  background: url("./assets/IMG_3278.JPG") no-repeat fixed center center/cover;
 }
 
-.notes h3 {
-  color: #9c9b9b;
+.notes p {
+  color: #333;
   padding: 20px;
 }

@@ -9,11 +9,13 @@ import axios from 'axios';
 
 class App extends Component {
   state = {
+    inputData: {
     firstname: "",
     lastname: "",
     phone: "",
     role: "",
-    message: "",
+    message: ""
+  },
     showPopup: false,
     data: [],
   };
@@ -26,7 +28,7 @@ componentDidMount() {
 
 inputHandler = (e) => {
   this.setState ({
-    [e.target.name]: e.target.value
+    inputData: { ...this.state.inputData, [e.target.name]: e.target.value },
   });
 };
 
@@ -35,26 +37,29 @@ popupHandler = (e) => {
   this.setState({ showPopup: true });
 };
 
-render () {
-  const props = {
-    first: this.state.firstname,
-    last: this.state.lastname,
-    phone: this.state.phone,
-    role: this.state.role,
-    message: this.state.message,
-  }
+postHandler = () => {
+  axios
+  .post("http://localhost:3001/notes", this.state.inputData)
+  .then((res) => {
+    console.log(res);
+    this.setState({ showPopup: false });
+    window.location.reload();
+  })
+  .catch((error) => console.log(error)); 
+  };
 
+render () {
   return (
     <div>
       <Header />
       <div className="formArea">
       <Form change={this.inputHandler} submit={this.popupHandler} />
-      <View {...props}/>
+      <View {...this.state.inputData}/>
       </div>
-      {this.state.showPopup && <Popup {...props}/>}
-      {/* IF YOU PUT EXCLAMATION POINT IN FRONT OF THE STATEMENT ABOVE, IT WILL TAKE IT AS TRUE. TRY!!!! */}
-      {this.state.data.map((note) =>(
-        <Notes {...this.state.data}/>
+      {this.state.showPopup && 
+      <Popup {...this.state.inputData} post={this.postHandler}/>}
+      {this.state.data.map((note) => (
+        <Notes {...note}/>
       ))}
       <Footer />
     </div>
