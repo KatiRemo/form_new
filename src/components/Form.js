@@ -21,7 +21,7 @@ const Form = (props) => {
                 <option value=""></option>
                 <option value="teacher">Teacher</option>
                 <option value="student">Student</option>
-                <option value="donkey">Donkey</option>
+                <option value="wannabe">Wannabe</option>
                 </select>
                 </div>
                 <div>
