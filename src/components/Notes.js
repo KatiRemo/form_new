@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Notes = ({firstname}) => {
+const Notes = ({ firstname }) => {
     return (
         <div className="notes">
-            {firstname};
+            { firstname };
+            
+
         </div>
     );
 };
