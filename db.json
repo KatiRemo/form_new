@@ -5,16 +5,16 @@
       "firstname": "Kati",
       "lastname": "Remo",
       "phone": "911",
-      "role": "Wannabe",
-      "message": "Tryin' here"
+      "role": "student",
+      "message": "Tryin' to hang on here"
     },
     {
       "id": 2,
       "firstname": "Roxie",
       "lastname": "Heat",
       "phone": "411",
-      "role": "Wannabe",
-      "message": "Da alter ego"
+      "role": "wannabe",
+      "message": "Winter break much needed"
     }
   ]
 }

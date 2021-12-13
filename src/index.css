@@ -11,9 +11,11 @@ body {
   background: -webkit-linear-gradient(bottom left, #fdfdcb, #ffbca4);
   background: -moz-linear-gradient(bottom left, #fdfdcb, #ffbca4);
   background: linear-gradient(to top right, #fdfdcb, #ffbca4);
+  background-size: 100% 100px no-repeat;
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 input[type="submit"],
@@ -51,7 +53,7 @@ button:hover {
   border-radius: 5px;
   box-shadow: 0 0 5px #333;
   color: #333;
-  background: #fcfdc2;
+  /* background: #fcfdc2; */
 }
 
 /* FORM COMPONENT */
@@ -76,7 +78,7 @@ input,
 textarea,
 select {
   font-family: "Raleway", sans-serif;
-  background: #eeeeee;
+  background: #fff5ee;
   border: 1px solid rgb(102, 102, 102);
   width: 250px;
   padding: 0.8rem;
@@ -144,7 +146,7 @@ select {
   position: relative;
   top: 0;
   left: 0;
-  height: 55%;
+  height: 55% auto;
   width: 50%;
   background: #fdfdcb;
   background: -webkit-linear-gradient(bottom left, #fdfdcb, #ffbca4);
@@ -173,10 +175,10 @@ header img {
 }
 
 footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #333;
+  /* background-color: #333; */
   color: #e6fff8;
   text-align: center;
   font-size: 1.2rem;
@@ -185,6 +187,10 @@ footer {
 
 .formArea {
   display: flex;
+}
+
+.notepad {
+  width: 70%;
 }
 
 .notes p {

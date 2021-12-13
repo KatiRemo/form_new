@@ -10,11 +10,11 @@ const Popup = ({firstname, lastname, phone, role, message, post }) => {
             <div className="popup">
                 <h1> Your note:</h1>
                 <div>
-                    <p>First name: <span>{firstname}</span> </p>
-                    <p>Last name: <span>{lastname}</span></p>
-                    <p>Phonenumber: <span>{phone}</span></p>
-                    <p>Role: <span>{role}</span></p>
-                    <p>Message: <span>{message}</span></p>
+                    <p>First name: <span><strong>{firstname}</strong></span> </p>
+                    <p>Last name: <span><strong>{lastname}</strong></span></p>
+                    <p>Phonenumber: <span><strong>{phone}</strong></span></p>
+                    <p>Role: <span><strong>{role}</strong></span></p>
+                    <p>Message: <span><strong>{message}</strong></span></p>
                     <button onClick={post}>Yes, I am sure </button>
                     <button className="secondary" onClick={closeHandler}>Nope, don't want to post it</button>
                 </div>
