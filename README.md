@@ -1,7 +1,5 @@
-The first picture is of the original form we created in class. The second screen shot is of the version I created after completing the original.
+# THE FORM APP
 
-![originalForm]
-(src/assets/originalForm.png)
+## Created on React course
 
-![updatedForm]
-(src/assets/originalForm.png)
+![Alt text](/src/assets/ss.png?raw=true "App")
